@@ -45,9 +45,7 @@ import {
     Switch, Route, Link
 } from 'react-router-dom'
 
-import Add from './components/Add'
-import Home from './components/Home'
-import List from './components/List'
+import Saainfo from './components/Saainfo'
 const App = () => {
 
   const padding = {
@@ -58,20 +56,13 @@ const App = () => {
       <div className="container">
           <Router>
               <div>
-                  <Link style={padding} to="/">home</Link>
-                  <Link style={padding} to="/add">add</Link>
-                  <Link style={padding} to="/list">list</Link>
+                  <Link style={padding} to="/Kartta">Kartta</Link>
+                  <Link style={padding} to="/Saainfo">Sää tiedot</Link>
               </div>
 
               <Switch>
-                  <Route path="/add">
-                      <Add />
-                  </Route>
-                  <Route path="/list">
-                      <List />
-                  </Route>
-                  <Route path="/">
-                      <Home />
+                  <Route path="/Saainfo">
+                      <Saainfo />
                   </Route>
               </Switch>
           </Router>
