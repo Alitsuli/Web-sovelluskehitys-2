@@ -1,13 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Kartta from './components/Kartta';
-import App from './App';
+import MapDirec from './components/MapDirec';
 
 
 ReactDOM.render(
-  <div id="mapid">
-    <App/>,
-    <Kartta/>
+  <div>
+    <MapDirec/>
   </div>,
   document.getElementById('root')
 );
